@@ -1,0 +1,57 @@
+svg {
+  font: 15px sans-serif;
+  background-color: #fff;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.x.axis line {
+  stroke: #eee;
+  stroke-opacity: .5;
+  shape-rendering: crispEdges;
+}
+
+.x.axis .zero line {
+  stroke: #FFA;
+  stroke-opacity: 0.4;
+}
+
+.title {
+  font: 300 48px Helvetica Neue;
+  fill: #006;
+}
+
+.circle {
+  font: 300 28px Helvetica Neue;
+  fill: #000;
+}
+
+.birthyear,
+.age {
+  text-anchor: middle;
+}
+
+.birthyear {
+  fill: #fff;
+}
+
+.now {
+  stroke: #FF3355;
+}
+.now rect:first-child {
+  stroke: #0055FF;
+}
+
+text {
+  fill-opacity: .8;
+}
+
+rect {
+  fill: #FF3355;
+}
+rect:first-child {
+  fill: #0055FF;
+}
+
