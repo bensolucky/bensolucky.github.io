@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+	<html>
+	  <head>
+	    <meta charset="utf-8" />
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <title>Pyramids</title>
+	    <link rel="stylesheet" href="pyramid.css" />
+	  </head>
+	  <body>
+	  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	  <script src="pyramid.js"></script>
+	  <span>
+	  <div id="option">
+            <input name="updateButton" 
+                   type="button" 
+                   value="Switch Between Raw Population and Proportions (%)" 
+                   onclick="makeNumbers()" />
+            <input name="2015Button" 
+	           align='right'
+                   type="button" 
+                   value="Turn off/on 2015 Outlines" 
+                   onclick="doOutlines()" />
+          </div>
+	  <span>
+	  <br>
+	  <div id="dd">
+          </div>
+	  </body>
+	</html>
