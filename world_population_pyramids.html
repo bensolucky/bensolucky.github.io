@@ -10,7 +10,9 @@
 	  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	  <script src="pyramid.js"></script>
 
-	  <div id="option">
+	  <br>
+	  <div style="display:inline" id="dd"></div>
+	  <div style="display:inline" id="option">
             <input name="updateButton" 
                    type="button" 
                    value="Switch Between Raw Population and Proportions (%)" 
@@ -20,13 +22,15 @@
                    type="button" 
                    value="Turn off/on 2015 Outlines" 
                    onclick="doOutlines()" />
-		   <span style="margin-left:3.5em;text:align-right"> Use arrow keys &larr; &rarr; to change country &uarr; &darr; to change years.</span>
           </div>
 
 	  <br>
-	  <div style="display:inline" id="dd"></div>
-          <span class="legend" style="margin-left:26em;background-color:#05F">Male</span>
+	  <br>
+	  <div>
+	  <span style="margin-left:0.5em;text:align-right"> Use arrow keys &larr; &rarr; to change country &uarr; &darr; to change years.</span>
+          <span class="legend" style="margin-left:1em;background-color:#05F">Male</span>
 	  <span class="legend" style="background-color:#F35">Female</span>
           <span class="legend" style="background-color:#94B">Overlap</span>
+          </div>
 	  </body>
 	</html>
