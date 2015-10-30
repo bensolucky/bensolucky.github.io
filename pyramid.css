@@ -55,3 +55,14 @@ rect:first-child {
   fill: #0055FF;
 }
 
+.legend {
+
+  display: inline-block;
+  width:7em;
+//  border: 1px;
+  color: #eee;
+  opacity: 0.75;
+//  margin-left:-0.5em;
+  text-align:center;
+
+}

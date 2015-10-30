@@ -9,7 +9,7 @@
 	  <body>
 	  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 	  <script src="pyramid.js"></script>
-	  <span>
+
 	  <div id="option">
             <input name="updateButton" 
                    type="button" 
@@ -20,10 +20,13 @@
                    type="button" 
                    value="Turn off/on 2015 Outlines" 
                    onclick="doOutlines()" />
+		   <span style="text:align-right"> Use arrow keys &larr; &rarr; to change country &uarr; &darr; to change years.</span>
           </div>
-	  <span>
+
 	  <br>
-	  <div id="dd">
-          </div>
+	  <div style="display:inline" id="dd"></div>
+          <span class="legend" style="background-color:#05F">Male</span>
+	  <span class="legend" style="background-color:#F35">Female</span>
+          <span class="legend" style="background-color:#94B">Overlap</span>
 	  </body>
 	</html>

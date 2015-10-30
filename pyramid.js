@@ -221,7 +221,7 @@ d3.csv("processed_data.csv", function(error, data) {
   // todo: Make these into a group (g)  also add to CSS
   var ratio = data_sex[this_country][year][2] / (data_sex[this_country][year][2] + data_sex[this_country][year][1]);
 
-  var hue_scale = d3.scale.linear().domain([0.25,0.75]).range([240, 360]);
+  var hue_scale = d3.scale.linear().domain([0.3,0.7]).range([240, 360]);
   var hue = hue_scale(ratio);
   var cx = 170;
   var cy = 136;
