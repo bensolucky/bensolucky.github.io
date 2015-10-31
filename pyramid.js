@@ -1,7 +1,7 @@
 // Define margins, barWidth and width and height in relation to margins
 var margin = {top: 20, right: 75, bottom: 30, left: 20},
     width = 960 - margin.left - margin.right,
-    height = 600 - margin.top - margin.bottom,
+    height = 560 - margin.top - margin.bottom,
     barWidth = Math.floor(height / 20) - 1; // will display 19 age categories, this could change
 
 var x = d3.scale.linear().range([width, 0]); // maps to [1910, 2000]
@@ -216,7 +216,11 @@ d3.csv("processed_data.csv", function(error, data) {
       .attr("y", function(age) { return y(year - age); })
       .attr("x", width + 0)
       .attr("dx", ".71em")
-      .text(function(age) { return age.toString() + " - " + (age + 5).toString(); });
+      .text(function(age) { 
+	   
+	  if (age === 100) { return age.toString() + "+"}
+	  else {return age.toString() + " - " + (age + 5).toString();}
+      });
 
   // todo: Make these into a group (g)  also add to CSS
   var ratio = data_sex[this_country][year][2] / (data_sex[this_country][year][2] + data_sex[this_country][year][1]);
@@ -227,7 +231,7 @@ d3.csv("processed_data.csv", function(error, data) {
   var cy = 136;
   var circle = svg.append("circle").attr("id", "circle")
      .attr("fill", "hsl(" + hue + ", 40%, 50%)")
-     .attr("fill-opacity", 0.05)
+     .attr("fill-opacity", 0.1)
      .attr("transform", "translate(" + cx + "," + cy+ ")") 
      .attr("r", function() { return radius(data_sums[this_country][year]);});
 
